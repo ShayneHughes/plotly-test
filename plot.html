@@ -12,6 +12,7 @@
           { return row[key]; });
       }
 var toy = {
+  name: 'Toy',
   x:unpack(rows, 'x1'),  y: unpack(rows, 'y1'), z: unpack(rows, 'z1'), 
   mode: 'markers',
   marker: {
@@ -25,6 +26,7 @@ var toy = {
   type: 'scatter3d'
 };
 var mini = {
+  name: 'Mini',
   x:unpack(rows, 'x2'),  y: unpack(rows, 'y2'), z: unpack(rows, 'z2'), 
   mode: 'markers',
   marker: {
