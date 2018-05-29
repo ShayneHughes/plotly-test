@@ -11,20 +11,20 @@
           return rows.map(function(row) 
           { return row[key]; });
       }
-var trace1 = {
+var toy = {
   x:unpack(rows, 'x1'),  y: unpack(rows, 'y1'), z: unpack(rows, 'z1'), 
   mode: 'markers',
   marker: {
     size: 12,
     line: {
       color: 'rgba(217, 217, 217, 0.14)',
-      width: 0.5
+      width: 0
     },
     opacity: 0.8
   },
   type: 'scatter3d'
 };
-var trace2 = {
+var mini = {
   x:unpack(rows, 'x2'),  y: unpack(rows, 'y2'), z: unpack(rows, 'z2'), 
   mode: 'markers',
   marker: {
@@ -33,13 +33,13 @@ var trace2 = {
     symbol: 'circle',
     line: {
       color: 'rgb(204, 204, 204)',
-      width: 1
+      width: 0
     },
-    opacity: 0.9
+    opacity: 0.8
   },
   type: 'scatter3d'
 };
-var data = [trace1, trace2];
+var data = [toy, mini];
 var layout = {
       dragmode: false,
       margin: {
